@@ -12,23 +12,27 @@ This script requires the following Python libraries:
 - chardet
 - openai
 
-You can install them using pip:
+You can install them using pip
 
-```bash
-pip install pandas numpy tqdm chardet openai
 In addition, you will need access to the OpenAI GPT-3 API, and your API key should be stored as an environment variable.
 
-Setup
+## Setup
+
 Install the required Python libraries:
 
-pip install pandas numpy tqdm chardet openai
+```bash
+!pip install pandas numpy tqdm chardet openai
+```
+
 Set your OpenAI API key as an environment variable. Replace your-key-here with your actual key:
-
 export OPENAI_KEY="your-key-here"
-Run the Jupyter notebook:
 
+Run the Jupyter notebook:
 jupyter notebook address_parser.ipynb
-How It Works
+
+
+## How It Works
+
 The notebook reads a CSV file, loops over its rows, and sends prompts to the OpenAI API to extract the street, postcode, city, state, and country from each address. The results are saved into new columns in the dataframe. The updated dataframe is then saved to a new CSV file.
 
 The script uses regular expressions to parse the response from the API and pandas to manage the data.
