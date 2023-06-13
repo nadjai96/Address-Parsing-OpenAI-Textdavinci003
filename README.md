@@ -36,10 +36,10 @@ The script uses regular expressions to parse the response from the API and panda
 Example
 Before running the script, your data may look something like this:
 
-| Column 1 Header | Column 2 Header | Column 3 Header |
-| --------------- | --------------- | --------------- |
-| Row 1 Cell 1    | Row 1 Cell 2    | Row 1 Cell 3    |
-| Row 2 Cell 1    | Row 2 Cell 2    | Row 2 Cell 3    |
+| Account_Name | Mailing_Address | Mailing_Street | Mailing_City | Mailing_State | Mailing_Zip | Mailing_Country |
+| --- | --- | --- | --- | --- | --- | --- |
+| Account1 | 123 Main St, Springfield, IL 12345, USA |  |  |  |  |  |
+| Account2 | 456 Pine St, Metropolis, CA 54321, USA |  |  |  |  |  |
 
 The 'Mailing_Street', 'Mailing_City', 'Mailing_State', 'Mailing_Zip', and 'Mailing_Country' columns are initially empty.
 
